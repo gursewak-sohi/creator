@@ -1092,6 +1092,10 @@ select{
   top: -1.5rem;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -3003,6 +3007,10 @@ select{
   padding-top: 1.25rem;
 }
 
+.pt-4{
+  padding-top: 1rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -3951,6 +3959,10 @@ select{
 
   .md\:h-\[22px\]{
     height: 22px;
+  }
+
+  .md\:h-12{
+    height: 3rem;
   }
 
   .md\:w-auto{
