@@ -21,12 +21,12 @@
                     <span class="w-full h-0.5 bg-stone-900 block rounded-full"></span>
                     <span class="w-full h-0.5 bg-stone-900 block rounded-full"></span>
                 </button>
-                <div x-transition x-show="open" class="md:ml-auto flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-8 absolute md:static top-full z-20 bg-white px-5 md:px-0 left-0 w-full md:w-auto py-5 md:py-0 border-t md:border-t-0 border-stone-100">
-                    <ul class="font-extrabold text-xl flex flex-col md:flex-row md:items-center gap-3 md:gap-8">
-                        <li><a href="javascript:;">exhibit</a></li>
-                        <li><a href="javascript:;">sponsor</a></li>
+                <div x-transition x-show="open" class="md:ml-auto flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 absolute md:static top-full z-20 bg-white px-5 md:px-0 left-0 w-full md:w-auto py-5 md:py-0 border-t md:border-t-0 border-stone-100">
+                    <ul class="font-extrabold flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
+                        <li><a class="px-4 py-2 inline-flex uppercase rounded-xl bg-stone-900 duration-300 hover:bg-stone-800 text-white shadow-[2px_4px_0px_0px_rgba(0,0,0,0.1)] active:scale-95" href="javascript:;">exhibit</a></li>
+                        <li><a class="px-4 py-2 inline-flex uppercase rounded-xl bg-stone-900 duration-300 hover:bg-stone-800 text-white shadow-[2px_4px_0px_0px_rgba(0,0,0,0.1)] active:scale-95" href="javascript:;">sponsor</a></li>
                     </ul>
-                    <a class="inline-flex px-4 py-2 font-extrabold rounded-2xl uppercase text-white bg-gradient-to-r from-[#EDE36D] via-[#3DBDA9] to-[#0DB3B9] shadow-[2px_4px_0px_0px_rgba(0,0,0,0.1)]" href="javascript:;">Tickets Coming soon</a>
+                    <a class="inline-flex px-4 py-2 font-extrabold rounded-xl uppercase text-white bg-gradient-to-r from-[#EDE36D] via-[#3DBDA9] to-[#0DB3B9] shadow-[2px_4px_0px_0px_rgba(0,0,0,0.1)]" href="javascript:;">Tickets Coming soon</a>
                 </div>
             </div>
         </div>
@@ -39,29 +39,33 @@
                 <h1 class="text-xl md:text-3xl xl:text-4xl mb-8 md:mb-16 text-center">For Creative Minds looking to <b>Up-skill</b>  and <span class="lg:bg-white lg:text-stone-900 lg:px-3 font-bold lg:py-2 lg:rounded-2xl">Connect.</span></h1>
                 <ul class="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-sm md:max-w-4xl">
                     <li class="flex flex-col items-center gap-2.5">
-                        <div class="aspect-square bg-white/10 w-full overflow-hidden flex rounded-2xl border-4 border-white relative before:absolute before:scale-0 before:w-full before:h-full before:bg-gradient-to-br before:from-[#EDE36D] before:via-[#3DBDA9] before:to-[#0DB3B9] before:-right-full before:-top-full before:duration-500 hover:before:right-0 hover:before:top-0 hover:before:scale-150 before:rounded-full">
-                            <div class="font-semibold text-sm px-4 absolute top-0 left-1/2 -translate-x-1/2 whitespace-nowrap py-2 border border-t-0 border-white rounded-t-none rounded-xl uppercase bg-white text-stone-900">Next Event</div>    
-                            <a class="px-4 py-2 font-bold flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white whitespace-nowrap rounded-xl text-xl hover:bg-white hover:text-stone-900 duration-300 active:scale-95" href="javascript::">Buy Tickets</a>
-                            <img class="w-full h-full object-cover" src="assets/images/dubai1.jpg" alt="city"/>
+                        <div class="aspect-square bg-white/10 w-full overflow-hidden flex rounded-2xl border-4 border-white relative before:absolute before:scale-0 before:w-full before:h-full before:bg-gradient-to-br before:from-[#EDE36D] before:via-[#3DBDA9] before:to-[#0DB3B9] before:-right-full before:-top-full before:duration-500 hover:before:right-0 hover:before:top-0 hover:before:scale-150 before:rounded-full before:z-10">
+                            <div class="font-bold z-20 text-sm px-4 absolute top-0 left-1/2 -translate-x-1/2 whitespace-nowrap py-2 border border-t-0 border-white rounded-t-none rounded-xl uppercase bg-white text-stone-900">Next Event</div>    
+                            <a class="px-4 py-2 z-20 font-extrabold uppercase flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white whitespace-nowrap rounded-xl hover:bg-white hover:text-stone-900 duration-300 active:scale-95" href="javascript::">Buy Tickets</a>
+                            <img class="w-full h-full object-cover" src="assets/images/melbourne.jpg" alt="city"/>
+                            <div class="w-full h-full absolute left-0 top-0 z-0 bg-black/40"></div>
                         </div>
                         <h4 class="font-medium text-2xl md:text-3xl">Melbourne</h4>
                     </li>
                     <li class="flex flex-col items-center gap-2.5">
-                        <div class="aspect-square bg-white/10 w-full overflow-hidden flex rounded-2xl border-4 border-white relative before:absolute before:scale-0 before:w-full before:h-full before:bg-gradient-to-br before:from-[#EDE36D] before:via-[#3DBDA9] before:to-[#0DB3B9] before:-right-full before:-top-full before:duration-500 hover:before:right-0 hover:before:top-0 hover:before:scale-150 before:rounded-full">
-                            <div class="font-semibold text-sm px-4 absolute top-0 left-1/2 -translate-x-1/2 whitespace-nowrap py-2 border border-t-0 border-white rounded-t-none rounded-xl uppercase bg-white text-stone-900">Next Event</div>    
-                            <a class="px-4 py-2 font-bold flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white whitespace-nowrap rounded-xl text-xl hover:bg-white hover:text-stone-900 duration-300 active:scale-95" href="javascript::">Buy Tickets</a>
-                            <img class="w-full h-full object-cover" src="assets/images/dubai1.jpg" alt="city"/>
+                        <div class="aspect-square bg-white/10 w-full overflow-hidden flex rounded-2xl border-4 border-white relative before:absolute before:scale-0 before:w-full before:h-full before:bg-gradient-to-br before:from-[#EDE36D] before:via-[#3DBDA9] before:to-[#0DB3B9] before:-right-full before:-top-full before:duration-500 hover:before:right-0 hover:before:top-0 hover:before:scale-150 before:rounded-full before:z-10">
+                            <div class="font-bold z-20 text-sm px-4 absolute top-0 left-1/2 -translate-x-1/2 whitespace-nowrap py-2 border border-t-0 border-white rounded-t-none rounded-xl uppercase bg-white text-stone-900">Next Event</div>    
+                            <a class="px-4 py-2 z-20 font-extrabold uppercase flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white whitespace-nowrap rounded-xl hover:bg-white hover:text-stone-900 duration-300 active:scale-95" href="javascript::">Buy Tickets</a>
+                            <img class="w-full h-full object-cover" src="assets/images/dubai.jpg" alt="city"/>
+                            <div class="w-full h-full absolute left-0 top-0 z-0 bg-black/40"></div>
                         </div>
                         <h4 class="font-medium text-2xl md:text-3xl">Dubai</h4>
                     </li>
                     <li class="flex flex-col items-center gap-2.5">
-                        <div class="aspect-square bg-white/10 w-full overflow-hidden flex rounded-2xl border-4 border-white relative before:absolute before:scale-0 before:w-full before:h-full before:bg-gradient-to-br before:from-[#EDE36D] before:via-[#3DBDA9] before:to-[#0DB3B9] before:-right-full before:-top-full before:duration-500 hover:before:right-0 hover:before:top-0 hover:before:scale-150 before:rounded-full">
-                            <div class="font-semibold text-sm px-4 absolute top-0 left-1/2 -translate-x-1/2 whitespace-nowrap py-2 border border-t-0 border-white rounded-t-none rounded-xl uppercase bg-white text-stone-900">Next Event</div>    
-                            <a class="px-4 py-2 font-bold flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white whitespace-nowrap rounded-xl text-xl hover:bg-white hover:text-stone-900 duration-300 active:scale-95" href="javascript::">Buy Tickets</a>
-                            <img class="w-full h-full object-cover" src="assets/images/dubai1.jpg" alt="city"/>
+                        <div class="aspect-square bg-white/10 w-full overflow-hidden flex rounded-2xl border-4 border-white relative before:absolute before:scale-0 before:w-full before:h-full before:bg-gradient-to-br before:from-[#EDE36D] before:via-[#3DBDA9] before:to-[#0DB3B9] before:-right-full before:-top-full before:duration-500 hover:before:right-0 hover:before:top-0 hover:before:scale-150 before:rounded-full before:z-10">
+                            <div class="font-bold z-20 text-sm px-4 absolute top-0 left-1/2 -translate-x-1/2 whitespace-nowrap py-2 border border-t-0 border-white rounded-t-none rounded-xl uppercase bg-white text-stone-900">Next Event</div>    
+                            <a class="px-4 py-2 z-20 font-extrabold uppercase flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white whitespace-nowrap rounded-xl hover:bg-white hover:text-stone-900 duration-300 active:scale-95" href="javascript::">Buy Tickets</a>
+                            <img class="w-full h-full object-cover" src="assets/images/Singapore.jpg" alt="city"/>
+                            <div class="w-full h-full absolute left-0 top-0 z-0 bg-black/40"></div>
                         </div>
                         <h4 class="font-medium text-2xl md:text-3xl">Singapore</h4>
                     </li>
+                   
                 </ul>
             </div>
         </div>
@@ -124,6 +128,216 @@
                     </ul>
                 </div>
                 
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-stone-100 py-14">
+        <div class="container">
+            <h3 class="text-3xl md:text-4xl font-extrabold text-center uppercase mb-10">Badges</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 lg:gap-8 max-w-7xl mx-auto">
+                <div class="flex flex-col bg-white rounded-2xl p-4">
+                    <div class="rounded-2xl p-4 text-center mb-3 bg-gradient-to-br from-[#ff930f] to-[#fff95b]">
+                         <h4 class="font-bold text-2xl">Discovery </h4>
+                    </div>
+                    <div class="text-center pt-2 pb-5">
+                        <span class="uppercase font-semibold mb-1 block text-stone-600">Price</span>
+                        <h5 class="text-3xl font-bold">AU$ 199</h5>
+                        <h6 class="text-xl font-bold text-stone-300 line-through">AU$ 299</h6>
+                    </div>
+                    <div class="border-t py-3 flex-1 flex flex-col">
+                        <ul class="mt-3 flex flex-col gap-1 font-semibold mb-10">
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Entry to show floor with 100+ software, hardware and services in the industry 
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Access to the innovation Hub 
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="pt-5 border-t border-stone-100 mt-auto">
+                            <a class="px-4 w-full py-3 inline-flex uppercase font-extrabold rounded-xl bg-stone-900 duration-300 hover:bg-stone-800 text-white justify-center text-center shadow-[2px_4px_0px_0px_rgba(0,0,0,0.1)] active:scale-95" href="javascript:;">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-white rounded-2xl p-4">
+                    <div class="rounded-2xl p-4 text-center mb-3 bg-gradient-to-br from-[#f13c77] to-[#f5e6ad]">
+                         <h4 class="font-bold text-2xl">Creator </h4>
+                    </div>
+                    <div class="text-center pt-2 pb-5">
+                        <span class="uppercase font-semibold mb-1 block text-stone-600">Price</span>
+                        <h5 class="text-3xl font-bold">AU$ 299</h5>
+                        <h6 class="text-xl font-bold text-stone-300 line-through">AU$ 399</h6>
+                    </div>
+                    <div class="border-t py-3 flex-1 flex flex-col">
+                        <ul class="mt-3 flex flex-col gap-1 font-semibold mb-10">
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Access to the Creators Hub
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Access to expo floor 
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Access to Creators networking Hub
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Access to launch party
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="pt-5 border-t border-stone-100 mt-auto">
+                            <a class="px-4 w-full py-3 inline-flex uppercase font-extrabold rounded-xl bg-stone-900 duration-300 hover:bg-stone-800 text-white justify-center text-center shadow-[2px_4px_0px_0px_rgba(0,0,0,0.1)] active:scale-95" href="javascript:;">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-white rounded-2xl p-4">
+                    <div class="rounded-2xl p-4 text-center mb-3 bg-gradient-to-br from-[#6e78ff] to-[#f5e6ad]">
+                         <h4 class="font-bold text-2xl">Industry </h4>
+                    </div>
+                    <div class="text-center pt-2 pb-5">
+                        <span class="uppercase font-semibold mb-1 block text-stone-600">Price</span>
+                        <h5 class="text-3xl font-bold">AU$ 899</h5>
+                        <h6 class="text-xl font-bold text-stone-300 line-through">AU$ 999</h6>
+                    </div>
+                    <div class="border-t py-3 flex-1 flex flex-col">
+                        <ul class="mt-3 flex flex-col gap-1 font-semibold mb-10">
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Access to Growth Hub and amphitheatre 
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Access to business lounge 
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Access to creator Hub
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Access to breakfast talks 
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Access to launch party 
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Acees to innovation Hub 
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="pt-5 border-t border-stone-100 mt-auto">
+                            <a class="px-4 w-full py-3 inline-flex uppercase font-extrabold rounded-xl bg-stone-900 duration-300 hover:bg-stone-800 text-white justify-center text-center shadow-[2px_4px_0px_0px_rgba(0,0,0,0.1)] active:scale-95" href="javascript:;">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-white rounded-2xl p-4 relative">
+                    <div class="bg-rose-500 absolute text-center font-bold text-white px-4 py-1 rounded-md left-1/2 whitespace-nowrap -translate-x-1/2 -top-6 lg:-top-10">less then 100 Left</div>
+                    <div class="rounded-2xl p-4 text-center mb-3 bg-gradient-to-br from-[#EDE36D] via-[#3DBDA9] to-[#0DB3B9]">
+                         <h4 class="font-bold text-2xl">Industry (VIP) </h4>
+                    </div>
+                    <div class="text-center pt-2 pb-5">
+                        <span class="uppercase font-semibold mb-1 block text-stone-600">Price</span>
+                        <h5 class="text-3xl font-bold">AU$ 1499</h5>
+                        <h6 class="text-xl font-bold text-stone-300 line-through">AU$ 1699</h6>
+                    </div>
+                    <div class="border-t py-3 flex-1 flex flex-col">
+                        <ul class="mt-3 flex flex-col gap-1 font-semibold mb-10">
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Your own private lounge front row at the main stage for the entire event with food and Bev service
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Access to growth Hub and amphitheatre  
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Vip tech pack 
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Access to business lounge
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Access to creator zone 
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Access to breakfast talks 
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="flex-shrink-0">
+                                    <img class="w-5 md:w-[22px] h-5 md:h-[22px] relative top-0.5" src="assets/images/check.svg" alt="check">
+                                </span>
+                                <span>Access to launch party  
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="pt-5 border-t border-stone-100 mt-auto">
+                            <a class="px-4 w-full py-3 inline-flex uppercase font-extrabold rounded-xl bg-stone-900 duration-300 hover:bg-stone-800 text-white justify-center text-center shadow-[2px_4px_0px_0px_rgba(0,0,0,0.1)] active:scale-95" href="javascript:;">Book Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
