@@ -12,7 +12,7 @@
 <body class="antialiased text-stone-900">
     <header class="bg-white relative">
         <div class="container">
-            <div x-data="{ open: window.innerWidth > 767 }" class="w-full flex justify-between py-3 items-center">
+            <div x-data="{ open: window.innerWidth > 767 ? true : false }" class="w-full flex justify-between py-3 items-center">
                 <a target="_blank" href="https://creatorcon.com/">
                     <img class="w-14" src="assets/images/Creatorcon_HeaderSymbol.svg" alt="logo"/>
                 </a>
@@ -21,7 +21,7 @@
                     <span class="w-full h-0.5 bg-stone-900 block rounded-full"></span>
                     <span class="w-full h-0.5 bg-stone-900 block rounded-full"></span>
                 </button>
-                <div x-transition x-show="open" class="md:ml-auto flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 absolute md:static top-full z-20 bg-white px-5 md:px-0 left-0 w-full md:w-auto py-5 md:py-0 border-t md:border-t-0 border-stone-100">
+                <div @click.away="open = false" x-transition x-show="open" class="md:ml-auto flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 absolute md:static top-full z-20 bg-white px-5 md:px-0 left-0 w-full md:w-auto py-5 md:py-0 border-t md:border-t-0 border-stone-100">
                     <ul class="font-extrabold flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
                         <li><a class="px-4 py-2 inline-flex uppercase rounded-xl bg-stone-900 duration-300 hover:bg-stone-800 text-white shadow-[2px_4px_0px_0px_rgba(0,0,0,0.1)] active:scale-95" href="javascript:;">exhibit</a></li>
                         <li><a class="px-4 py-2 inline-flex uppercase rounded-xl bg-stone-900 duration-300 hover:bg-stone-800 text-white shadow-[2px_4px_0px_0px_rgba(0,0,0,0.1)] active:scale-95" href="javascript:;">sponsor</a></li>
@@ -32,14 +32,14 @@
         </div>
     </header>
 
-    <section class="bg-black/70 text-white relative">
+    <section class="bg-black/70 text-white relative overflow-hidden">
         <div class="container">
-            <div class="py-16 flex flex-col items-center">
+            <div class="py-20 md:py-16 flex flex-col items-center">
                 <img class="mb-6 md:mb-12" width="750" src="assets/images/Creatorcon_WhiteLogo.svg" alt="logo"/>
-                <h1 class="text-xl md:text-3xl xl:text-4xl mb-8 md:mb-16 text-center">For Creative Minds looking to <b>Up-skill</b>  and <span class="lg:bg-white lg:text-stone-900 lg:px-3 font-bold lg:py-2 lg:rounded-2xl">Connect.</span></h1>
-                <ul class="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-sm md:max-w-4xl">
+                <h1 class="text-xl md:text-3xl xl:text-4xl mb-0 md:mb-16 text-center max-w-80 sm:max-w-max">For Creative Minds looking to <b>Up-skill</b>  and <span class="lg:bg-white lg:text-stone-900 lg:px-3 font-bold lg:py-2 lg:rounded-2xl">Connect.</span></h1>
+                <ul class="hidden md:grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-sm md:max-w-4xl mx-auto">
                     <li class="flex flex-col items-center gap-2.5">
-                        <div class="aspect-square bg-white/10 w-full overflow-hidden flex rounded-2xl border-4 border-white relative before:absolute before:scale-0 before:w-full before:h-full before:bg-gradient-to-br before:from-[#EDE36D] before:via-[#3DBDA9] before:to-[#0DB3B9] before:-right-full before:-top-full before:duration-500 hover:before:right-0 hover:before:top-0 hover:before:scale-150 before:rounded-full before:z-10">
+                        <div class="aspect-square bg-white/10 w-full overflow-hidden flex rounded-2xl border-4 border-white relative before:absolute before:scale-0 before:w-full before:h-full before:bg-gradient-to-br before:from-[#EDE36D] before:via-[#3DBDA9] before:to-[#0DB3B9] before:-right-full before:-top-full before:duration-500 hover:before:right-0 hover:before:top-0 hover:before:scale-150 before:rounded-full before:z-10 max-w-[272px]">
                             <div class="font-bold z-20 text-sm px-4 absolute top-0 left-1/2 -translate-x-1/2 whitespace-nowrap py-2 border border-t-0 border-white rounded-t-none rounded-xl uppercase bg-white text-stone-900">Next Event</div>    
                             <a class="px-4 py-2 z-20 font-extrabold uppercase flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white whitespace-nowrap rounded-xl hover:bg-white hover:text-stone-900 duration-300 active:scale-95" href="javascript::">Buy Tickets</a>
                             <img class="w-full h-full object-cover" src="assets/images/melbourne.jpg" alt="city"/>
@@ -48,7 +48,7 @@
                         <h4 class="font-medium text-2xl md:text-3xl">Melbourne</h4>
                     </li>
                     <li class="flex flex-col items-center gap-2.5">
-                        <div class="aspect-square bg-white/10 w-full overflow-hidden flex rounded-2xl border-4 border-white relative before:absolute before:scale-0 before:w-full before:h-full before:bg-gradient-to-br before:from-[#EDE36D] before:via-[#3DBDA9] before:to-[#0DB3B9] before:-right-full before:-top-full before:duration-500 hover:before:right-0 hover:before:top-0 hover:before:scale-150 before:rounded-full before:z-10">
+                        <div class="aspect-square bg-white/10 w-full overflow-hidden flex rounded-2xl border-4 border-white relative before:absolute before:scale-0 before:w-full before:h-full before:bg-gradient-to-br before:from-[#EDE36D] before:via-[#3DBDA9] before:to-[#0DB3B9] before:-right-full before:-top-full before:duration-500 hover:before:right-0 hover:before:top-0 hover:before:scale-150 before:rounded-full before:z-10 max-w-[272px]">
                             <div class="font-bold z-20 text-sm px-4 absolute top-0 left-1/2 -translate-x-1/2 whitespace-nowrap py-2 border border-t-0 border-white rounded-t-none rounded-xl uppercase bg-white text-stone-900">Apply Now</div>    
                             <a class="px-4 py-2 z-20 font-extrabold uppercase flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white whitespace-nowrap rounded-xl hover:bg-white hover:text-stone-900 duration-300 active:scale-95" href="javascript::">Buy Tickets</a>
                             <img class="w-full h-full object-cover" src="assets/images/dubai.jpg" alt="city"/>
@@ -57,7 +57,7 @@
                         <h4 class="font-medium text-2xl md:text-3xl">Dubai</h4>
                     </li>
                     <li class="flex flex-col items-center gap-2.5">
-                        <div class="aspect-square bg-white/10 w-full overflow-hidden flex rounded-2xl border-4 border-white relative before:absolute before:scale-0 before:w-full before:h-full before:bg-gradient-to-br before:from-[#EDE36D] before:via-[#3DBDA9] before:to-[#0DB3B9] before:-right-full before:-top-full before:duration-500 hover:before:right-0 hover:before:top-0 hover:before:scale-150 before:rounded-full before:z-10">
+                        <div class="aspect-square bg-white/10 w-full overflow-hidden flex rounded-2xl border-4 border-white relative before:absolute before:scale-0 before:w-full before:h-full before:bg-gradient-to-br before:from-[#EDE36D] before:via-[#3DBDA9] before:to-[#0DB3B9] before:-right-full before:-top-full before:duration-500 hover:before:right-0 hover:before:top-0 hover:before:scale-150 before:rounded-full before:z-10 max-w-[272px]">
                             <div class="font-bold z-20 text-sm px-4 absolute top-0 left-1/2 -translate-x-1/2 whitespace-nowrap py-2 border border-t-0 border-white rounded-t-none rounded-xl uppercase bg-white text-stone-900">Apply Now</div>    
                             <a class="px-4 py-2 z-20 font-extrabold uppercase flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white whitespace-nowrap rounded-xl hover:bg-white hover:text-stone-900 duration-300 active:scale-95" href="javascript::">Buy Tickets</a>
                             <img class="w-full h-full object-cover" src="assets/images/Singapore.jpg" alt="city"/>
@@ -65,11 +65,51 @@
                         </div>
                         <h4 class="font-medium text-2xl md:text-3xl">Singapore</h4>
                     </li>
-                   
                 </ul>
             </div>
         </div>
-        <video class="absolute min-w-full min-h-full object-cover top-0 left-0 -z-10" src="assets/videos/Creatorcon Hero.webm" autoplay muted loop/>
+        <video class="absolute min-w-full min-h-full object-cover top-0 left-0 -z-10" autoplay muted loop>
+            <source src="assets/videos/Creatorcon-Hero.mp4" type="video/mp4">
+            <source src="assets/videos/Creatorcon-Hero.webm" type="video/webm">
+            Sorry, your browser does not support embedded videos.
+        </video>
+        
+    </section>
+
+    <section class="text-white flex md:hidden">
+        <div class="container">
+            <div class="py-16">
+                <ul class="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-sm md:max-w-4xl mx-auto">
+                    <li class="flex flex-col items-center gap-2.5">
+                        <div class="aspect-square bg-white/10 w-full overflow-hidden flex rounded-2xl border-4 border-white relative before:absolute before:scale-0 before:w-full before:h-full before:bg-gradient-to-br before:from-[#EDE36D] before:via-[#3DBDA9] before:to-[#0DB3B9] before:-right-full before:-top-full before:duration-500 hover:before:right-0 hover:before:top-0 hover:before:scale-150 before:rounded-full before:z-10 max-w-[272px]">
+                            <div class="font-bold z-20 text-sm px-4 absolute top-0 left-1/2 -translate-x-1/2 whitespace-nowrap py-2 border border-t-0 border-white rounded-t-none rounded-xl uppercase bg-white text-stone-900">Next Event</div>    
+                            <a class="px-4 py-2 z-20 font-extrabold uppercase flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white whitespace-nowrap rounded-xl hover:bg-white hover:text-stone-900 duration-300 active:scale-95" href="javascript::">Buy Tickets</a>
+                            <img class="w-full h-full object-cover" src="assets/images/melbourne.jpg" alt="city"/>
+                            <div class="w-full h-full absolute left-0 top-0 z-0 bg-black/40"></div>
+                        </div>
+                        <h4 class="font-medium text-2xl md:text-3xl text-stone-900">Melbourne</h4>
+                    </li>
+                    <li class="flex flex-col items-center gap-2.5">
+                        <div class="aspect-square bg-white/10 w-full overflow-hidden flex rounded-2xl border-4 border-white relative before:absolute before:scale-0 before:w-full before:h-full before:bg-gradient-to-br before:from-[#EDE36D] before:via-[#3DBDA9] before:to-[#0DB3B9] before:-right-full before:-top-full before:duration-500 hover:before:right-0 hover:before:top-0 hover:before:scale-150 before:rounded-full before:z-10 max-w-[272px]">
+                            <div class="font-bold z-20 text-sm px-4 absolute top-0 left-1/2 -translate-x-1/2 whitespace-nowrap py-2 border border-t-0 border-white rounded-t-none rounded-xl uppercase bg-white text-stone-900">Apply Now</div>    
+                            <a class="px-4 py-2 z-20 font-extrabold uppercase flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white whitespace-nowrap rounded-xl hover:bg-white hover:text-stone-900 duration-300 active:scale-95" href="javascript::">Buy Tickets</a>
+                            <img class="w-full h-full object-cover" src="assets/images/dubai.jpg" alt="city"/>
+                            <div class="w-full h-full absolute left-0 top-0 z-0 bg-black/40"></div>
+                        </div>
+                        <h4 class="font-medium text-2xl md:text-3xl text-stone-900">Dubai</h4>
+                    </li>
+                    <li class="flex flex-col items-center gap-2.5">
+                        <div class="aspect-square bg-white/10 w-full overflow-hidden flex rounded-2xl border-4 border-white relative before:absolute before:scale-0 before:w-full before:h-full before:bg-gradient-to-br before:from-[#EDE36D] before:via-[#3DBDA9] before:to-[#0DB3B9] before:-right-full before:-top-full before:duration-500 hover:before:right-0 hover:before:top-0 hover:before:scale-150 before:rounded-full before:z-10 max-w-[272px]">
+                            <div class="font-bold z-20 text-sm px-4 absolute top-0 left-1/2 -translate-x-1/2 whitespace-nowrap py-2 border border-t-0 border-white rounded-t-none rounded-xl uppercase bg-white text-stone-900">Apply Now</div>    
+                            <a class="px-4 py-2 z-20 font-extrabold uppercase flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white whitespace-nowrap rounded-xl hover:bg-white hover:text-stone-900 duration-300 active:scale-95" href="javascript::">Buy Tickets</a>
+                            <img class="w-full h-full object-cover" src="assets/images/Singapore.jpg" alt="city"/>
+                            <div class="w-full h-full absolute left-0 top-0 z-0 bg-black/40"></div>
+                        </div>
+                        <h4 class="font-medium text-2xl md:text-3xl text-stone-900">Singapore</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section class="bg-stone-100 py-16">
@@ -136,28 +176,28 @@
     <section class="bg-stone-900 text-white py-14">
         <div class="container">
             <h3 class="text-3xl md:text-4xl font-extrabold text-center uppercase mb-10">Stages</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-20 max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 max-w-6xl mx-auto">
                 <div class="flex flex-col text-center">
-                    <div class="rounded-2xl aspect-square mb-3">
-                        <img class="w-full h-full object-cover" src="assets/images/CreatorStage.svg" alt="image">
+                    <div class="rounded-2xl mb-5 flex justify-center">
+                        <img width="245" class="w-[245px] h-[245px] object-cover" src="assets/images/CreatorStage.svg" alt="image">
                     </div>
-                    <h4 class="text-3xl md:text-4xl font-extrabold text-center mb-2">Creators</h4>
-                    <p class="text-sm"><b>Professional Insight + Workshop Demonstration In:</b> <br>Videography, Graphic Design, Game Design, Illustration, Animation, Copywriting, UI/UX, Photography, Audio Production, Brand Identity, Creative Strategies,
+                    <h4 class="text-3xl md:text-4xl font-extrabold text-center mb-4">Creators Stage</h4>
+                    <p class="text-base"><b>Professional Insight + Workshop Demonstration In:</b> <br>Videography, Graphic Design, Game Design, Illustration, Animation, Copywriting, UI/UX, Photography, Audio Production, Brand Identity, Creative Strategies,
                         Sound Engineering <a class="font-bold text-[#0DB3B9]" href="javascript:;">+MORE</a></p>
                 </div>
                 <div class="flex flex-col text-center">
-                    <div class="rounded-2xl aspect-square mb-3">
-                        <img class="w-full h-full object-cover" src="assets/images/GrowthStage.svg" alt="image">
+                    <div class="rounded-2xl mb-5 flex justify-center">
+                        <img width="245" class="w-[245px] h-[245px] object-cover" src="assets/images/GrowthStage.svg" alt="image">
                     </div>
-                    <h4 class="text-3xl md:text-4xl font-extrabold text-center mb-2">Growth</h4>
-                    <p class="text-sm"><b>Professional Insight + Workshop Demonstration In:</b> <br>Digital Advertising (Meta, Youtube, Google etc.), Personal Branding, Search Engine Optimising, Email Marketing, Business Collaborations, AI & Digital Automation, Social Media Mastery, Software & Technology <a class="font-bold text-[#0DB3B9]" href="javascript:;">+MORE</a></p>
+                    <h4 class="text-3xl md:text-4xl font-extrabold text-center mb-4">Growth Stage</h4>
+                    <p class="text-base"><b>Professional Insight + Workshop Demonstration In:</b> <br>Digital Advertising (Meta, Youtube, Google etc.), Personal Branding, Search Engine Optimising, Email Marketing, Business Collaborations, AI & Digital Automation, Social Media Mastery, Software & Technology <a class="font-bold text-[#0DB3B9]" href="javascript:;">+MORE</a></p>
                 </div>
                 <div class="flex flex-col text-center">
-                    <div class="rounded-2xl aspect-square mb-3">
-                        <img class="w-full h-full object-cover" src="assets/images/LaunchStage.svg" alt="image">
+                    <div class="rounded-2xl mb-5 flex justify-center">
+                        <img width="245" class="w-[245px] h-[245px] object-cover" src="assets/images/LaunchStage.svg" alt="image">
                     </div>
-                    <h4 class="text-3xl md:text-4xl font-extrabold text-center mb-2">Launch</h4>
-                    <p class="text-sm"><b>Product & Service Reveals + CreatorCon Pitch Tank :</b> <br>Exclusive Software, Hardware & Technology  Launches from Upcoming, Established & Leading Australian Companies, Personalities, Brands and Service Providers <a class="font-bold text-[#0DB3B9]" href="javascript:;">+MORE</a></p>
+                    <h4 class="text-3xl md:text-4xl font-extrabold text-center mb-4">Launch Stage</h4>
+                    <p class="text-base"><b>Product & Service Reveals + CreatorCon Pitch Tank :</b> <br>Exclusive Software, Hardware & Technology  Launches from Upcoming, Established & Leading Australian Companies, Personalities, Brands and Service Providers <a class="font-bold text-[#0DB3B9]" href="javascript:;">+MORE</a></p>
                 </div>
             </div>
             <h4 class="text-2xl md:text-3xl xl:text-4xl mt-12 text-center max-w-5xl mx-auto"><b>CreatorCon</b> connects you with the tools you need to take the next steps on your creative path.</h4>
@@ -404,7 +444,7 @@
 
     
 
-    <footer class="bg-stone-900 sticky bottom-0 pt-4">
+    <footer class="bg-stone-900 sticky bottom-0 pt-4 z-30">
         <div class="flex items-center gap-7 mb-2">
             <span class="w-full bg-white h-1.5 rounded-r-lg"></span>
             <a class="inline-flex text-2xl px-4 py-1 whitespace-nowrap font-extrabold rounded-2xl uppercase text-white bg-gradient-to-r from-[#EDE36D] via-[#3DBDA9] to-[#0DB3B9]" href="javascript:;">Buy Tickets</a>
