@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-var baseSpeed =  60; // pixels per second
+var baseSpeed =  30; // pixels per second
 
       window.onload = function() {
         var scrollAnimation = document.querySelectorAll('.scroll-animation');
