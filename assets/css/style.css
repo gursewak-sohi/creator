@@ -2648,6 +2648,16 @@ select{
   border-color: rgb(245 245 244 / var(--tw-border-opacity));
 }
 
+.border-purple-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(147 51 234 / var(--tw-border-opacity));
+}
+
+.border-\[\#0DB3B9\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(13 179 185 / var(--tw-border-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2737,6 +2747,19 @@ select{
 .bg-rose-500{
   --tw-bg-opacity: 1;
   background-color: rgb(244 63 94 / var(--tw-bg-opacity));
+}
+
+.bg-red-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#0DB3B9\]\/10{
+  background-color: rgb(13 179 185 / 0.1);
+}
+
+.bg-\[\#0DB3B9\]\/5{
+  background-color: rgb(13 179 185 / 0.05);
 }
 
 .bg-gradient-to-r{
@@ -2985,6 +3008,16 @@ select{
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .pb-4{
@@ -3253,6 +3286,26 @@ select{
 .text-stone-300{
   --tw-text-opacity: 1;
   color: rgb(214 211 209 / var(--tw-text-opacity));
+}
+
+.text-purple-600{
+  --tw-text-opacity: 1;
+  color: rgb(147 51 234 / var(--tw-text-opacity));
+}
+
+.text-red-300{
+  --tw-text-opacity: 1;
+  color: rgb(252 165 165 / var(--tw-text-opacity));
+}
+
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.text-rose-500{
+  --tw-text-opacity: 1;
+  color: rgb(244 63 94 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -3963,6 +4016,10 @@ select{
 
   .md\:h-12{
     height: 3rem;
+  }
+
+  .md\:h-10{
+    height: 2.5rem;
   }
 
   .md\:w-auto{
